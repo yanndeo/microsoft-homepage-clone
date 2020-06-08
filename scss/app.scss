@@ -1,0 +1,58 @@
+
+/* Tools */
+@import "tools/functions";
+@import "tools/mixins";
+@import "tools/variables";
+
+/* Base */
+@import "base/base";
+
+/* Layouts */
+@import "layout/grid";
+
+/* Modules */
+//@import "module/header";
+//@import "module/section";
+//@import "module/slider";
+
+
+
+
+/* Comment sont ecrites les règles
+
+.class {
+    Box :règles qui concernent la boîte, tailles, positionement
+    
+    Border : les bordures
+
+    background : les bacground color image
+
+    Text : les fonts et taille du text.
+
+    Other : le reste  ex: transformation css 
+}
+
+BEM
+.widget
+    .widget__title
+    .widget__body
+    .widget__XX
+
+
+.widget--green
+.widget--dark */
+
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px 
+C'est a dire elle ne depasse pas 1280px
+@media screen and (max-width: 1280px)
+*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* Tools */
+/*Functions & Mixins */
+/* Variables */
+/* Base */
+@import url(../node_modules/normalize.css/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("/assets/fontawesome/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+/* Valeur Par Default */
+:root h2 {
+  padding: 0;
+  margin: 0;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  line-height: 0.83333;
+  letter-spacing: 1.5px;
+  color: #0d0d0d; }
+
+:root h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.875rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #0d0d0d;
+  text-transform: uppercase; }
+
+:root h5 {
+  margin: 0;
+  padding: 0; }
+
+:root hr {
+  margin: 115px 0;
+  padding: 0;
+  height: 2px;
+  background-color: #e6e6e6;
+  border: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.75; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.25rem;
+  line-height: 28px; }
+
+.cb {
+  clear: both; }
+
+.important {
+  color: #e74c3c;
+  line-height: 28px; }
+
+.is-active {
+  color: #f39c12; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+ul {
+  list-style: none; }
+
+/* Layouts */
+/* /////////////////// RESPONSIVE //////////////// */
+/* Modules */
+/* Comment sont ecrites les règles
+
+.class {
+    Box :règles qui concernent la boîte, tailles, positionement
+    
+    Border : les bordures
+
+    background : les bacground color image
+
+    Text : les fonts et taille du text.
+
+    Other : le reste  ex: transformation css 
+}
+
+BEM
+.widget
+    .widget__title
+    .widget__body
+    .widget__XX
+
+
+.widget--green
+.widget--dark */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px 
+C'est a dire elle ne depasse pas 1280px
+@media screen and (max-width: 1280px)
+*/

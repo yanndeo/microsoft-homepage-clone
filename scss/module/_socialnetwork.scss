@@ -1,0 +1,50 @@
+/* ---------------- SOCIAL NETWORK ---------- */
+/* -------------------------------------- */
+
+
+
+.twitter,
+.facebook,
+.dribble,
+.google-plus,
+.linkedin {
+    color: #999999;
+    &:hover{
+        color: $main-color;
+    }
+    &:before{
+        content: "\f0d5";
+        display: inline-block;
+        padding: 6px;
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        font-size: .9rem;
+        vertical-align: middle;
+        font-style: normal;
+    }
+}
+
+
+.twitter{
+    &::before{
+        content: '\f099';
+    }
+}
+
+.facebook {
+    &::before {
+        content: '\f39e';
+    }
+}
+
+.dribble {
+    &::before {
+        content: '\f17d';
+    }
+}
+
+.linkedin {
+    &::before {
+        content: '\f0e1';
+    }
+}
