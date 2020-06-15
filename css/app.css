@@ -272,6 +272,7 @@ ul {
 
 @media only screen and (min-width: 860px) {
   .main-nav {
+    background-color: red;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
