@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url("/assets/fontawesome/css/all.min.css");
 
-
+/* @font-face {
+    font-family: Segoe UI;
+    src: url('/assets/font/segoe-ui/Segoe\ UI.woff') format("woff"),
+         url('/assets/font/segoe-ui/Segoe\ UI\ Bold.woff')
+} */
 
 * {
     margin: 0;
@@ -18,24 +22,32 @@
 
 /* Valeur Par Default */
 :root {
-    h2 {
+    h1,h2 {
         padding: 0;
         margin: 0;
-        font-size:clamp(r(16px), 4vw, r(24px)); // r(30px);
-        line-height: lh(25, 30);
-        letter-spacing: 1.5px;
-        color: #0d0d0d;
+       // margin-bottom: r(20px);
+        font-size:clamp(r(20px), 2.5vw, r(46px)); // r(30px);
+        font-weight: 600;
+        line-height: 56px ; //lh(56, 46);
+        letter-spacing: -0.46px;
+       // text-align: center;
     }
+
+     h1{
+         font-size: clamp(r(20px), 4vw, r(46px));  
+     }
+
+    
 
     h3{
         margin: 0;
         padding: 0;
-        margin-bottom: r(14px);
-        font-size: r(18px);
-        line-height: 1.25;
-        font-weight: 700;
-        color: #0d0d0d;
-        text-transform: uppercase;
+        font-size: r(20px);
+        line-height:lh(24,20); // 24px;
+        font-weight: 600;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
     }
 
     h5{
@@ -57,45 +69,32 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #fff;
-    font-size: 16px;
-    font-family: $fontFamily;
-    //color: #737373;
-    line-height: 1.75; //1.75 pourcent de la taille de la police
+    background: #fff;
+    font-size: 15px;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    line-height: 1.5; //1.5 pourcent de la taille de la police
 }
 
 
 a{
- color: inherit;
+ color: $main-color;
  text-decoration: none;
+ @include transition-duration();
 }
 
 
 p{
     padding: 0;
     margin: 0;
-    margin-bottom: r(20px);
-    line-height: 28px;
+   // margin-bottom: r(20px);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: lh(20, 15) ;
 }
 
 
 
-
-
-
-
-
-
-
-.cb{
-    clear: both;
-}
-
-
-.important{
-    color: #e74c3c;
-    line-height: 28px;
-}
 
 .is-active{
     color: $main-color;
@@ -109,6 +108,12 @@ p{
 
 ul{
     list-style: none;
+    li{
+        &:last-child{
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 

@@ -21,6 +21,13 @@
 }
 
 
+@mixin horizontal-vertical-centering-flex() {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
 
 
 
@@ -44,3 +51,5 @@
 @mixin transition-duration($value:.3s){
     transition: $value;
 }
+
+

@@ -11,14 +11,25 @@
 @import "layout/grid";
 
 /* Modules */
-//@import "module/header";
-//@import "module/section";
+@import "module/components/icons";
+@import "module/components/btn";
+@import "module/components/card";
+
+@import "module/menu";
+@import "module/header";
+@import "module/home-card-1";
+@import "module/banner";
+@import "module/links";
+@import "module/footer";
+
+
+
 //@import "module/slider";
+;
 
 
 
-
-/* Comment sont ecrites les règles
+/*Comment sont ecrites les règles
 
 .class {
     Box :règles qui concernent la boîte, tailles, positionement

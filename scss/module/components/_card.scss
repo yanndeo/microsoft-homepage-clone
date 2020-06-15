@@ -1,0 +1,38 @@
+.card{
+    cursor: pointer;
+
+    .card-image {
+        margin-bottom: r(30px);
+    }
+
+    .card-description {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .card-link {
+        display: block;
+        margin-bottom: r(20px);
+        color: #0067B8;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: lh(18.5, 15);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+/* ///////////////////// RESPONSIVE ///////////////// */
+
+
+@media(max-width: 1083px) {
+    .card-link{
+        display: inline-block !important;
+        margin-right: 20px;
+    }
+}
+

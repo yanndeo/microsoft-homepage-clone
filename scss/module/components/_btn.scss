@@ -1,0 +1,70 @@
+/* ---------------- BUTTONS ---------- */
+/* -------------------------------------- */
+
+.btn, .btn-inverse{
+    padding: r(10px) r(20px);
+    background: #fff;
+   // @include border(1px, #fff);
+    border-radius: 0;
+    line-height: lh(18.5, 15);
+    font-size: r(15px);
+    font-weight: 600;
+    color: $main-color;
+    @include transition-duration(.4s);
+ 
+    &:hover{
+        background: #ddd;
+        span{
+            padding-bottom: r(1.4px);
+            border-bottom: r(2px) solid $main-color;
+        }
+    }
+}
+
+.btn-inverse{
+    background: $main-color;
+    color: #fff;
+    &:hover {
+        background: $main-color;
+        opacity: 0.9;
+        span {
+            padding-bottom: 1.4px;
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
+
+
+.btn-more{
+    &:after{
+        content: "\f054";
+        display: inline-block;
+        padding-left: r(5px);
+        font-size: r(13px);
+        font-weight: 600;
+        //font-family: "Font Awesome 5 Brands";
+        font-family: 'Font Awesome 5 Free';
+         
+    }
+
+    &:hover{
+        &::after{
+            @include transition-duration(.4s);
+            margin-left: 10px;
+        }
+    }
+   
+}
+    
+
+
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+
+
+
+
+
